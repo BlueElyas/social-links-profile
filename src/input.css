@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* General styles */
+
+  * {
+    @apply box-border m-0 p-0;
+  }
+
+  body {
+    @apply font-inter bg-neutralOffBlack text-neutralWhite;
+  }
+
+  main {
+    @apply px-6 sm:w-[480px] sm:m-auto;
+  }
+
+  /* Card styles */
+
+  .card {
+    @apply bg-neutralDarkGray flex flex-col gap-8 p-8 text-center h-[700px] mt-32 rounded-2xl;
+  }
+
+  .card__img_container {
+    @apply flex justify-center;
+  }
+
+  .card__img {
+    @apply w-32 rounded-full;
+  }
+
+  /* Header styles */
+
+  .card__header {
+    @apply font-[500];
+  }
+
+  .card__header__title {
+    @apply text-4xl;
+  }
+
+  .card__header__title--green {
+    @apply text-primaryGreen my-4 text-xl;
+  }
+
+  /* Quote styles */
+
+  .card__quote {
+    @apply text-lg;
+  }
+
+  /* Card list */
+
+  .card__list {
+    @apply flex flex-col justify-around font-bold gap-4;
+  }
+
+  .card__list__items {
+    @apply bg-neutralGray py-4 rounded-2xl text-xl;
+  }
+}
