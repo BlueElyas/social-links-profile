@@ -58,6 +58,6 @@
   }
 
   .card__list__items {
-    @apply bg-neutralGray py-4 rounded-2xl text-xl;
+    @apply bg-neutralGray py-4 rounded-2xl text-xl cursor-pointer hover:bg-primaryGreen hover:text-neutralDarkGray;
   }
 }
